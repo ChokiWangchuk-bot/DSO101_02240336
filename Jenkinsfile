@@ -37,7 +37,7 @@ pipeline {
             }
             post {
                 always {
-                    junit 'backend/junit.xml'
+                    archiveArtifacts artifacts: 'backend/junit.xml', allowEmptyArchive: true
                 }
             }
         }
