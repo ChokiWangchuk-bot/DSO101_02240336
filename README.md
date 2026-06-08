@@ -8,7 +8,7 @@ Bachelor of Engineering in Software Engineering — Royal University of Bhutan
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 /
@@ -62,7 +62,6 @@ Once the images were on DockerHub, I deployed them on Render.com by selecting **
 | `PORT` | Backend server port (5000) |
 | `REACT_APP_API_URL` | Live backend URL for the frontend |
 
-> 💡 Important: `.env` files are never committed to Git. All sensitive values go into Render's environment variable settings or GitHub Secrets.
 
 ### Part B — Automated Builds with render.yaml
 
@@ -95,7 +94,7 @@ services:
 
 ---
 
-## Assignment 2 — Jenkins CI/CD Pipeline 🔧
+## Assignment 2 — Jenkins CI/CD Pipeline 
 
 **Submitted:** 25th March
 
@@ -171,10 +170,10 @@ After a few failed attempts (the deploy stage kept failing because of Docker reg
 
 | Build | Result | Notes |
 |-------|--------|-------|
-| #6 | ❌ Failed | Test + Deploy failed |
-| #7 | ❌ Failed | Deploy stage failing |
-| #8 | ✅ Passed | All stages green |
-| #9 | ✅ Passed | Clean run, ~13s total |
+| #6 |  Failed | Test + Deploy failed |
+| #7 |  Failed | Deploy stage failing |
+| #8 |  Passed | All stages green |
+| #9 |  Passed | Clean run, ~13s total |
 
 ### Challenges
 - The deploy stage failed twice before I figured out the Docker credentials weren't configured properly in Jenkins
@@ -244,14 +243,34 @@ jobs:
 
 | Run | Trigger | Result | Duration |
 |-----|---------|--------|----------|
-| #2 | Fix Docker build path | ✅ Passed | 33s |
-| #3 | Update Dockerfile | ✅ Passed | 31s |
+| #2 | Fix Docker build path |  Passed | 33s |
+| #3 | Update Dockerfile |  Passed | 31s |
+
+##  Screenshot
+
+The `screenshots/` folder contains the images used to document the assignment work.
+
+- `Screenshot 2026-05-11 at 11.11.45 PM.png` — DockerHub backend image view for `chokiwangchuk/be-todo:02240336` (Assignment 1)
+- `Screenshot 2026-05-12 at 12.00.42 AM.png` — DockerHub backend image scan and layer details (Assignment 1)
+- `Screenshot 2026-05-12 at 12.00.49 AM.png` — DockerHub frontend image view for `chokiwangchuk/fe-todo:02240336` (Assignment 1)
+- `Screenshot 2026-05-12 at 12.01.03 AM.png` — Frontend image layer details for `fe-todo:02240336` (Assignment 1)
+- `Screenshot 2026-05-12 at 12.01.14 AM.png` — Frontend image layer details for `fe-todo:02240336` (Assignment 1)
+- `Screenshot 2026-05-12 at 3.18.42 PM.png` — Render environment variable configuration for `REACT_APP_API_URL` (Assignment 1)
+- `Screenshot 2026-05-13 at 1.30.43 PM.png` — GitHub personal access token scope setup screen (Assignment 3)
+- `Screenshot 2026-05-13 at 1.30.47 PM.png` — GitHub token permission details screen (Assignment 3)
+- `Screenshot 2026-05-13 at 1.31.21 PM.png` — GitHub PAT details page for repository and workflow access (Assignment 3)
+- `Screenshot 2026-05-13 at 5.17.13 PM.png` — Jenkins pipeline build history for `todo-app-pipeline` (Assignment 2)
+- `Screenshot 2026-05-13 at 5.27.09 PM.png` — Jenkins stage timing summary for the pipeline run (Assignment 2)
+- `Screenshot 2026-05-14 at 11.16.50 AM.png` — DockerHub CLI login instructions using a Docker PAT (Assignment 1)
+- `Screenshot 2026-05-14 at 12.09.29 PM.png` — GitHub Actions workflow run results for `deploy.yml` (Assignment 3)
+
+
 
 ### Render Deployment
 
 Both services are live on Render:
-- **todo-backend** — Status: Deployed ✅
-- **todo-app:latest** — Status: Deployed ✅
+- **todo-backend** — Status: Deployed 
+- **todo-app:latest** — Status: Deployed 
 
 **Live URL:** https://dashboard.render.com/web/srv-d82lp357vvec7386tna0
 
