@@ -250,19 +250,52 @@ jobs:
 
 The `screenshots/` folder contains the images used to document the assignment work.
 
-- `Screenshot 2026-05-11 at 11.11.45 PM.png` — DockerHub backend image view for `chokiwangchuk/be-todo:02240336` (Assignment 1)
-- `Screenshot 2026-05-12 at 12.00.42 AM.png` — DockerHub backend image scan and layer details (Assignment 1)
-- `Screenshot 2026-05-12 at 12.00.49 AM.png` — DockerHub frontend image view for `chokiwangchuk/fe-todo:02240336` (Assignment 1)
-- `Screenshot 2026-05-12 at 12.01.03 AM.png` — Frontend image layer details for `fe-todo:02240336` (Assignment 1)
-- `Screenshot 2026-05-12 at 12.01.14 AM.png` — Frontend image layer details for `fe-todo:02240336` (Assignment 1)
-- `Screenshot 2026-05-12 at 3.18.42 PM.png` — Render environment variable configuration for `REACT_APP_API_URL` (Assignment 1)
-- `Screenshot 2026-05-13 at 1.30.43 PM.png` — GitHub personal access token scope setup screen (Assignment 3)
-- `Screenshot 2026-05-13 at 1.30.47 PM.png` — GitHub token permission details screen (Assignment 3)
-- `Screenshot 2026-05-13 at 1.31.21 PM.png` — GitHub PAT details page for repository and workflow access (Assignment 3)
-- `Screenshot 2026-05-13 at 5.17.13 PM.png` — Jenkins pipeline build history for `todo-app-pipeline` (Assignment 2)
-- `Screenshot 2026-05-13 at 5.27.09 PM.png` — Jenkins stage timing summary for the pipeline run (Assignment 2)
-- `Screenshot 2026-05-14 at 11.16.50 AM.png` — DockerHub CLI login instructions using a Docker PAT (Assignment 1)
-- `Screenshot 2026-05-14 at 12.09.29 PM.png` — GitHub Actions workflow run results for `deploy.yml` (Assignment 3)
+### Screenshot Gallery
+
+The `screenshots/` folder contains the images used to document the assignment work.
+
+#### Assignment 1
+![DockerHub backend image](screenshots/Screenshot%202026-05-11%20at%2011.11.45%E2%80%AFPM.png)
+*DockerHub backend image view for `chokiwangchuk/be-todo:02240336`*
+
+![DockerHub backend layer scan](screenshots/Screenshot%202026-05-12%20at%2012.00.42%E2%80%AFAM.png)
+*DockerHub backend image scan and layer details*
+
+![DockerHub frontend image](screenshots/Screenshot%202026-05-12%20at%2012.00.49%E2%80%AFAM.png)
+*DockerHub frontend image view for `chokiwangchuk/fe-todo:02240336`*
+
+![DockerHub frontend layer scan](screenshots/Screenshot%202026-05-12%20at%2012.01.03%E2%80%AFAM.png)
+*Frontend image layer details*
+
+![DockerHub frontend layer scan 2](screenshots/Screenshot%202026-05-12%20at%2012.01.14%E2%80%AFAM.png)
+*Frontend image layer details*
+
+![Render env vars](screenshots/Screenshot%202026-05-12%20at%203.18.42%E2%80%AFPM.png)
+*Render environment variable configuration for `REACT_APP_API_URL`*
+
+![DockerHub CLI login](screenshots/Screenshot%202026-05-14%20at%2011.16.50%E2%80%AFAM.png)
+*DockerHub CLI login instructions using a Docker PAT*
+
+#### Assignment 2
+![Jenkins build history](screenshots/Screenshot%202026-05-13%20at%205.17.13%E2%80%AFPM.png)
+*Jenkins pipeline build history for `todo-app-pipeline`*
+
+![Jenkins stage timing](screenshots/Screenshot%202026-05-13%20at%205.27.09%E2%80%AFPM.png)
+*Jenkins stage timing summary for the pipeline run*
+
+#### Assignment 3
+![GitHub PAT scope](screenshots/Screenshot%202026-05-13%20at%201.30.43%E2%80%AFPM.png)
+*GitHub personal access token scope setup screen*
+
+![GitHub PAT permissions](screenshots/Screenshot%202026-05-13%20at%201.30.47%E2%80%AFPM.png)
+*GitHub token permission details screen*
+
+![GitHub PAT details](screenshots/Screenshot%202026-05-13%20at%201.31.21%E2%80%AFPM.png)
+*GitHub PAT details page for repository and workflow access*
+
+![GitHub Actions run](screenshots/Screenshot%202026-05-14%20at%2012.09.29%E2%80%AFPM.png)
+*GitHub Actions workflow run results for `deploy.yml`*
+
 
 
 
@@ -314,11 +347,9 @@ Connected the GitHub repository directly to Render.com as a **Web Service**. Ren
 
  **Live URL:** https://todo-backend.onrender.com
 
-### Challenges
+## Challenges
 - Understanding the difference between deploying from a Docker image vs deploying directly from a GitHub repo
 - Making sure the start command was correctly configured on Render
-
----
 
 ## Overall Learning Outcomes
 
@@ -332,9 +363,7 @@ Going through all four assignments, here's what genuinely clicked for me:
 
 **Local CI/CD (Jenkins) vs cloud CI/CD (GitHub Actions)** serve different purposes. Jenkins gives you full control; GitHub Actions gives you convenience and scalability.
 
----
-
-##  Links
+#  Links
 
 - **GitHub Repository:** https://github.com/ChokiWangchuk-bot/DSO101_02240336.git
 - **DockerHub Image:** https://hub.docker.com/r/chodukwangchuk/todo-app
