@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "jest --ci --reporters=default --reporters=jest-junit",
+    "build": "echo 'No build step'"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +17,9 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "jest-junit": "^17.0.0"
   }
 }

@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: be-todo
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: PORT
+        value: 5000
+
+  - type: web
+    name: fe-todo
+    env: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    buildArgs:
+      - key: REACT_APP_API_URL
+        value: https://be-todo-02240336-1.onrender.com
